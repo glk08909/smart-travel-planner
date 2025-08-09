@@ -2,7 +2,8 @@
 
 A personalized travel planning app powered by LLMs and Streamlit, with a dashboard for tracking user activity.
 
-🧠 Problem Statement
+# 🧠 Problem Statement
+
 Planning a trip can be overwhelming — juggling destinations, activities, budgets, and logistics often leads to decision fatigue. Traditional travel tools offer static suggestions, but they lack personalization, adaptability, and intelligent guidance.
 
 📘 Project Description
