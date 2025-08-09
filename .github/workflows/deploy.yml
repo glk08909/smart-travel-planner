@@ -1,0 +1,21 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to Render
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ rnd_BcYaFwCaaqFdUALkvPDB768MMjEn }}" \
+            -H "Content-Type: application/json" \
+            -d '{"serviceId": "srv-d2bmjrqdbo4c73b0f2eg"}' \
+            https://api.render.com/v1/services/srv-d2bmjrqdbo4c73b0f2eg/deploys
