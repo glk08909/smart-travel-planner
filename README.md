@@ -100,46 +100,7 @@ Whether you're planning a weekend getaway or a multi-city adventure, Smart Trave
 
 
 # 📁 Recommended Folder Structure
-smart-travel-planner/
-├── app/                         # Core application logic
-│   ├── main.py                  # Entry point (Streamlit or FastAPI)
-│   ├── routes/                  # API endpoints or Streamlit pages
-│   │   └── itinerary.py
-│   ├── services/                # Business logic (LLM, search, etc.)
-│   │   ├── planner.py
-│   │   ├── embedding.py
-│   │   └── retrieval.py
-│   ├── prompts/                 # Prompt templates
-│   │   └── itinerary_prompt.txt
-│   └── utils/                   # Helper functions
-│       └── logger.py
-│
-├── data/                        # Raw and processed travel data
-│   ├── raw/                     # Original data files
-│   └── processed/               # Cleaned and chunked data
-│
-├── embeddings/                 # Stored vector DB (e.g., FAISS or Chroma)
-│   └── faiss_index/
-│
-├── ingestion/                  # Data ingestion pipeline
-│   └── ingest.py
-│
-├── dashboard/                  # Monitoring and analytics
-│   ├── dashboard.py
-│   └── charts.py
-│
-├── tests/                      # Unit and integration tests
-│   ├── test_planner.py
-│   └── test_routes.py
-│
-├── Dockerfile                  # Docker container setup
-├── docker-compose.yml          # Multi-container orchestration
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project overview
-├── .env                        # Environment variables
-└── .github/
-    └── workflows/              # GitHub Actions for CI/CD
-        └── deploy.yml
+<img width="791" height="422" alt="image" src="https://github.com/user-attachments/assets/fe740da6-ab9b-4cc9-9e1f-8b48a03c6a38" />
 
 
 # 📦 Setup Guide for Smart Travel Planner
