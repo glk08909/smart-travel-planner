@@ -9,7 +9,9 @@ Planning a trip can be overwhelming — juggling destinations, activities, budge
 ## 📘 Solution 
 Smart Travel Planner is an AI-powered application that generates personalized travel itineraries by retrieving relevant information from a custom knowledge base using a RAG approach. This project integrates document ingestion, vector-based retrieval, and a language model for generation to deliver accurate and context-aware travel plans.
 
-
+## Data Source 
+https://huggingface.co/datasets/osunlp/TravelPlanner
+In TravelPlanner, for a given query, language agents are expected to formulate a comprehensive plan that includes transportation, daily meals, attractions, and accommodation for each day.TravelPlanner comprises 1,225 queries in total. The number of days and hard constraints are designed to test agents' abilities across both the breadth and depth of complex planning.
 
 ## Features
 The app includes:
@@ -23,65 +25,8 @@ Containerization: Docker setup for easy deployment and reproducibility.
 
 Whether you're planning a weekend getaway or a multi-city adventure, Smart Travel Planner simplifies the process and makes travel planning intuitive, intelligent, and fun.
 
-# Architecture Diagram
-+---------------------+
-|   User Interface    |  ← Streamlit 
-|  (Planner + Dashboard)
-+---------------------+
-           |
-           v
-+---------------------+
-|     LLM Engine      |  ← OpenAI 
-|  (Generates itinerary)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Prompt Builder    |  ← Custom prompts based on query
-+---------------------+
-           |
-           v
-+---------------------+
-|   Retrieval Layer   |  ← FAISS or Chroma
-|  (Semantic search from vector DB)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Embedded Chunks   |  ← Travel data from OSU TravelPlanner
-|  (Stored as vectors)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Ingestion Script  |  ← Python-based pipeline
-|  (Cleans, chunks, embeds data)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Monitoring Layer  |  ← Streamlit Dashboard + Plotly
-|  (User feedback, logs, charts)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Docker Container  |  ← Docker + docker-compose
-|  (Encapsulates planner + dashboard)
-+---------------------+
-           |
-           v
-+---------------------+
-|   CI/CD Pipeline    |  ← GitHub Actions
-|  (Auto-deploy on push)
-+---------------------+
-           |
-           v
-+---------------------+
-|   Cloud Deployment  |  ← Render
-|  (Live app hosting)
-+---------------------+
-
+## Architecture Diagram
+<img width="1024" height="1536" alt="ChatGPT Image Aug 9, 2025, 01_24_32 PM" src="https://github.com/user-attachments/assets/2444ef50-ba7c-49e2-8bcd-d01e00d31450" />
 
 # 🧰 Technologies Used & Documentation
 
@@ -104,41 +49,51 @@ Whether you're planning a weekend getaway or a multi-city adventure, Smart Trave
 
 
 ## 📦 Setup Guide for Smart Travel Planner
-
-Prerequisites
-Make sure you have these installed on your system:
+Step 1: Get What You Need
+Make sure your computer has these installed:
 
 Python 3.10 or higher
 
 Docker and Docker Compose
 
 Git
+(Optional) Node.js if you want to work with frontend frameworks
 
-(Optional) Node.js if you plan to use frontend frameworks
+Step 2: Download the Project
+Open your terminal (command prompt) and type:
 
-Clone the Repository
-Open a terminal and run:
+bash
+Copy
+Edit
 git clone https://github.com/your-username/smart-travel-planner.git
-Then change into the project directory:
 cd smart-travel-planner
+Step 3: Prepare Your Python Environment
+Create and activate a virtual environment to keep things tidy:
 
-Create Virtual Environment
-Create and activate a Python virtual environment:
+bash
+Copy
+Edit
+python -m venv venv
+On Mac/Linux:
 
-Run: python -m venv venv
+bash
+Copy
+Edit
+source venv/bin/activate
+On Windows:
 
-Activate it:
+bash
+Copy
+Edit
+venv\Scripts\activate
+Then install all needed packages:
 
-On macOS/Linux: source venv/bin/activate
-
-On Windows: venv\Scripts\activate
-
-Install Dependencies
-Install required Python packages with:
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
-Set Up Environment Variables
-Create a .env file in the root folder with these variables:
+Step 4: Configure and Load Data
+Create a file named .env in the project folder with these lines:
 
 ini
 Copy
@@ -146,38 +101,21 @@ Edit
 OPENAI_API_KEY=your_openai_key
 VECTOR_DB_PATH=./embeddings/faiss_index
 DATA_PATH=./data/processed
-Ingest Travel Data
-Run the ingestion script to process and embed your travel data:
+Next, process your travel data by running:
+
+bash
+Copy
+Edit
 python ingestion/ingest.py
+Step 5: Run the App
+Choose how you want to run it:
 
-Run the App
+Using Streamlit (easy GUI):
 
-Option A: Start the Streamlit interface with:
+bash
+Copy
+Edit
 streamlit run app/main.py
-
-Option B: Run FastAPI backend server with:
-uvicorn app.main:app --reload
-
-Run with Docker
-Build and start the app containers:
-docker-compose up --build
-
-Run Tests
-Execute tests to verify everything works:
-pytest tests/
-
-Deploy to Render (Optional)
-
-Push your code to GitHub
-
-Connect the repository to Render platform
-
-Set environment variables in Render’s dashboard
-
-Choose Docker or Python build option
-
-
-
 
 # 🧭 Usage Guide
 This app helps users generate personalized travel itineraries using AI. You can run it via a user-friendly interface or interact with it through an API.
@@ -211,6 +149,22 @@ LLM response quality metrics
 # 📁 Code Structure
 
 <img width="700" height="473" alt="image" src="https://github.com/user-attachments/assets/a30c1d4e-40d1-430f-b03a-9e4c12052678" />
+
+🧭 Full Project Roadmap
+Step	Task	Status
+1️⃣	Define project idea & problem statement	✅ Done
+2️⃣	Ingest OSU TravelPlanner dataset	✅ Done
+3️⃣	Build retrieval flow with FAISS	✅ Done
+4️⃣	Construct prompt using retrieved chunks	✅ Done
+5️⃣	Integrate with LLM (OpenAI)	✅ Done
+6️⃣	Build user interface (Streamlit or FastAPI)	✅ Done
+7️⃣	Add monitoring (feedback + dashboard)	✅ Done
+8️⃣	Containerize with Docker + docker-compose	✅ Done
+9️⃣	Ensure reproducibility (README + setup)	✅ Done
+🔟	Apply best practices (hybrid search, re-ranking, rewriting)	✅ Done
+1️⃣1️⃣	Deploy to cloud + add creative features	✅ Done
+<img width="468" height="282" alt="image" src="https://github.com/user-attachments/assets/e41f0a51-fb18-4d43-9ff1-542858915993" />
+
 
 # 📊 Evaluation and Monitoring
 This project includes tools to evaluate itinerary quality and monitor user feedback to continuously improve the travel planning experience.
@@ -249,14 +203,6 @@ Stored in a local database or cloud storage
 
 Used to retrain or adjust prompt templates for better results
 
-🛠️ Future Enhancements
-Planned improvements include:
-
-Sentiment analysis on feedback
-
-Automated itinerary scoring using external travel APIs
-
-A/B testing different prompt styles
 
 
 
