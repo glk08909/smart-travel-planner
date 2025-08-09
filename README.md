@@ -193,11 +193,34 @@ Stored in a local database or cloud storage
 
 Used to retrain or adjust prompt templates for better results
 
-# Demonstration
+# Smart Travel Planner- Demonstration
 
-<img width="1598" height="703" alt="Screenshot 2025-08-09 at 12 40 15 PM" src="https://github.com/user-attachments/assets/e284f17b-0e7b-4432-b55b-fe1f2b666ab6" />
+Dashboard
+<img width="1501" height="1008" alt="Screenshot 2025-08-08 at 10 55 37 PM" src="https://github.com/user-attachments/assets/3cede29d-35e5-441b-8ad9-92582a0da547" />
 
+<img width="1920" height="1014" alt="Screenshot 2025-08-08 at 10 55 52 PM" src="https://github.com/user-attachments/assets/c53bae95-210d-493b-9df0-d7a1a4362df8" />
 
+Plotviews and log activities.
+<img width="1918" height="1012" alt="Screenshot 2025-08-08 at 11 11 21 PM" src="https://github.com/user-attachments/assets/bb172ff0-55cd-46ad-88ff-579bf48e4e31" />
+<img width="1918" height="1004" alt="Screenshot 2025-08-08 at 11 40 23 PM" src="https://github.com/user-attachments/assets/a9879123-4252-4cbd-a107-9d52a2dbc8a2" />
+<img width="1919" height="968" alt="Screenshot 2025-08-08 at 11 40 41 PM" src="https://github.com/user-attachments/assets/653fab56-0331-4cc0-882d-90c47e2718e8" />
 
+Docker deployment.
+<img width="1918" height="1080" alt="Screenshot 2025-08-08 at 11 57 26 PM" src="https://github.com/user-attachments/assets/722edf01-e47d-4a7f-bb30-f344f3ab3c34" />
+<img width="1669" height="538" alt="Screenshot 2025-08-08 at 11 59 18 PM" src="https://github.com/user-attachments/assets/3722f401-3658-416b-88e4-224b22ab4dfc" />
 
+Render connection from github.
+<img width="1919" height="966" alt="Screenshot 2025-08-09 at 11 37 12 AM" src="https://github.com/user-attachments/assets/58996403-808e-4cdb-b7ca-3f17728d1e16" />
+<img width="1901" height="978" alt="Screenshot 2025-08-09 at 11 39 27 AM" src="https://github.com/user-attachments/assets/378d232e-bc46-43cc-b9cd-686620ae7025" />
+<img width="1912" height="1003" alt="Screenshot 2025-08-09 at 11 44 27 AM" src="https://github.com/user-attachments/assets/5afb86f9-7765-4e47-b08d-d3ee87f645cd" />
 
+Github CI/CD.
+<img width="1910" height="670" alt="Screenshot 2025-08-09 at 12 21 13 PM" src="https://github.com/user-attachments/assets/dd1a7c11-6ee9-4ae5-b305-5a6e81ca743f" />
+<img width="1904" height="681" alt="Screenshot 2025-08-09 at 12 23 32 PM" src="https://github.com/user-attachments/assets/7780af31-f4a2-44a0-962a-8736e17828bd" />
+<img width="1801" height="618" alt="Screenshot 2025-08-09 at 12 24 40 PM" src="https://github.com/user-attachments/assets/b0af18c6-a9db-40df-a1a1-85bb0d51a206" />
+
+API key generation in Render
+<img width="1424" height="727" alt="Screenshot 2025-08-09 at 12 39 58 PM" src="https://github.com/user-attachments/assets/498aafff-6790-4fe7-b9c8-153b1d37edf6" />
+
+Github mail alert when CI/CD failed
+<img width="1598" height="703" alt="Screenshot 2025-08-09 at 12 40 15 PM" src="https://github.com/user-attachments/assets/39b3766c-6bf4-4f4a-84db-0ce55805ce11" />
