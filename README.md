@@ -103,63 +103,80 @@ Whether you're planning a weekend getaway or a multi-city adventure, Smart Trave
 <img width="791" height="422" alt="image" src="https://github.com/user-attachments/assets/fe740da6-ab9b-4cc9-9e1f-8b48a03c6a38" />
 
 
-# 📦 Setup Guide for Smart Travel Planner
+## 📦 Setup Guide for Smart Travel Planner
 
-1. 🔧 Prerequisites
-Make sure you have the following installed:
+Prerequisites
+Make sure you have these installed on your system:
 
-Python 3.10+
+Python 3.10 or higher
 
-Docker & Docker Compose
+Docker and Docker Compose
 
 Git
 
 (Optional) Node.js if you plan to use frontend frameworks
 
-2. 📁 Clone the Repository
-bash
+Clone the Repository
+Open a terminal and run:
 git clone https://github.com/your-username/smart-travel-planner.git
+Then change into the project directory:
 cd smart-travel-planner
-3. 🐍 Create Virtual Environment
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-4. 📦 Install Dependencies
-bash
-pip install -r requirements.txt
-5. 🔐 Set Up Environment Variables
-Create a .env file in the root directory:
 
-env
+Create Virtual Environment
+Create and activate a Python virtual environment:
+
+Run: python -m venv venv
+
+Activate it:
+
+On macOS/Linux: source venv/bin/activate
+
+On Windows: venv\Scripts\activate
+
+Install Dependencies
+Install required Python packages with:
+pip install -r requirements.txt
+
+Set Up Environment Variables
+Create a .env file in the root folder with these variables:
+
+ini
+Copy
+Edit
 OPENAI_API_KEY=your_openai_key
 VECTOR_DB_PATH=./embeddings/faiss_index
 DATA_PATH=./data/processed
-6. 🧠 Ingest Travel Data
-Run the ingestion script to clean, chunk, and embed travel data:
-
-bash
+Ingest Travel Data
+Run the ingestion script to process and embed your travel data:
 python ingestion/ingest.py
-7. 🚀 Run the App
-Option A: Streamlit
-bash
+
+Run the App
+
+Option A: Start the Streamlit interface with:
 streamlit run app/main.py
-Option B: FastAPI
-bash
+
+Option B: Run FastAPI backend server with:
 uvicorn app.main:app --reload
-8. 🐳 Run with Docker
-bash
+
+Run with Docker
+Build and start the app containers:
 docker-compose up --build
-9. 🧪 Run Tests
-bash
+
+Run Tests
+Execute tests to verify everything works:
 pytest tests/
-10. 🌐 Deploy to Render (Optional)
-Push your repo to GitHub
 
-Connect it to Render
+Deploy to Render (Optional)
 
-Set environment variables in Render dashboard
+Push your code to GitHub
 
-Choose Docker or Python build
+Connect the repository to Render platform
+
+Set environment variables in Render’s dashboard
+
+Choose Docker or Python build option
+
+
 
 
 # 🧭 Usage Guide
