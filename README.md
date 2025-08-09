@@ -26,7 +26,9 @@ Containerization: Docker setup for easy deployment and reproducibility.
 Whether you're planning a weekend getaway or a multi-city adventure, Smart Travel Planner simplifies the process and makes travel planning intuitive, intelligent, and fun.
 
 ## Architecture Diagram
-<img width="1024" height="1536" alt="ChatGPT Image Aug 9, 2025, 01_24_32 PM" src="https://github.com/user-attachments/assets/2444ef50-ba7c-49e2-8bcd-d01e00d31450" />
+<img width="1000" height="1300" alt="ChatGPT Image Aug 9, 2025, 01_24_32 PM" src="https://github.com/user-attachments/assets/2444ef50-ba7c-49e2-8bcd-d01e00d31450" />
+
+
 
 # 🧰 Technologies Used & Documentation
 
@@ -150,21 +152,9 @@ LLM response quality metrics
 
 <img width="700" height="473" alt="image" src="https://github.com/user-attachments/assets/a30c1d4e-40d1-430f-b03a-9e4c12052678" />
 
-🧭 Full Project Roadmap
-Step	Task	Status
-1️⃣	Define project idea & problem statement	✅ Done
-2️⃣	Ingest OSU TravelPlanner dataset	✅ Done
-3️⃣	Build retrieval flow with FAISS	✅ Done
-4️⃣	Construct prompt using retrieved chunks	✅ Done
-5️⃣	Integrate with LLM (OpenAI)	✅ Done
-6️⃣	Build user interface (Streamlit or FastAPI)	✅ Done
-7️⃣	Add monitoring (feedback + dashboard)	✅ Done
-8️⃣	Containerize with Docker + docker-compose	✅ Done
-9️⃣	Ensure reproducibility (README + setup)	✅ Done
-🔟	Apply best practices (hybrid search, re-ranking, rewriting)	✅ Done
-1️⃣1️⃣	Deploy to cloud + add creative features	✅ Done
-<img width="468" height="282" alt="image" src="https://github.com/user-attachments/assets/e41f0a51-fb18-4d43-9ff1-542858915993" />
+# 🧭 Full Project Roadmap
 
+<img width="468" height="282" alt="image" src="https://github.com/user-attachments/assets/e41f0a51-fb18-4d43-9ff1-542858915993" />
 
 # 📊 Evaluation and Monitoring
 This project includes tools to evaluate itinerary quality and monitor user feedback to continuously improve the travel planning experience.
