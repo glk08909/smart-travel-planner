@@ -33,13 +33,7 @@ Whether you're planning a weekend getaway or a multi-city adventure, Smart Trave
 - Docker + Docker Compose
 - GitHub for version control
 
-## 📦 Setup
-
-```bash
-git clone https://github.com/yourusername/smart-travel-planner.git
-cd smart-travel-planner
-docker-compose up --build
-
+## Folder Structure
 smart-travel-planner/
 ├── planner/       # Streamlit app
 ├── dashboard/     # Log visualization
@@ -47,3 +41,12 @@ smart-travel-planner/
 ├── logs/          # User activity logs
 ├── docker-compose.yml
 └── .env
+
+## 📦 Setup
+
+```bash
+git clone https://github.com/yourusername/smart-travel-planner.git
+cd smart-travel-planner
+docker-compose up --build
+
+
