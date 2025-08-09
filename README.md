@@ -24,3 +24,11 @@ A personalized travel planning app powered by LLMs and Streamlit, with a dashboa
 git clone https://github.com/yourusername/smart-travel-planner.git
 cd smart-travel-planner
 docker-compose up --build
+
+smart-travel-planner/
+├── planner/       # Streamlit app
+├── dashboard/     # Log visualization
+├── data/          # Shared data
+├── logs/          # User activity logs
+├── docker-compose.yml
+└── .env
