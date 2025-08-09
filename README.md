@@ -193,6 +193,9 @@ Stored in a local database or cloud storage
 
 Used to retrain or adjust prompt templates for better results
 
+# Demonstration
+
+<img width="1598" height="703" alt="Screenshot 2025-08-09 at 12 40 15 PM" src="https://github.com/user-attachments/assets/e284f17b-0e7b-4432-b55b-fe1f2b666ab6" />
 
 
 
