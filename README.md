@@ -192,27 +192,8 @@ Feedback ratings
 LLM response quality metrics
 
 # 📁 Code Structure
-smart-travel-planner/
-├── app/
-│   ├── main.py              # Entry point for Streamlit or FastAPI app
-│   ├── planner.py           # Core logic for itinerary generation
-│   ├── utils.py             # Helper functions (e.g., date parsing, formatting)
-│   ├── config.py            # Configuration settings and constants
-│   └── feedback.py          # Handles user feedback and storage
-│
-├── dashboard/
-│   └── dashboard.py         # Streamlit dashboard for analytics and feedback
-│
-├── data/
-│   └── destinations.json    # Sample data for popular destinations
-│
-├── tests/
-│   ├── test_planner.py      # Unit tests for itinerary logic
-│   └── test_feedback.py     # Tests for feedback handling
-│
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-└── .gitignore               # Files to ignore in version control
+
+<img width="700" height="473" alt="image" src="https://github.com/user-attachments/assets/a30c1d4e-40d1-430f-b03a-9e4c12052678" />
 
 # 📊 Evaluation and Monitoring
 This project includes tools to evaluate itinerary quality and monitor user feedback to continuously improve the travel planning experience.
