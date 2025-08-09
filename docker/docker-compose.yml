@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  planner:
+    build: ./planner
+    ports:
+      - "${PLANNER_PORT}:8501"
+    volumes:
+      - ./data:/app/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  dashboard:
+    build: ./dashboard
+    ports:
+     - "${DASHBOARD_PORT}:3000"
+    volumes:
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
