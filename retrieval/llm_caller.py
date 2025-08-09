@@ -20,7 +20,7 @@
 #         )
 #         return response["choices"][0]["message"]["content"]
 #     except Exception as e:
-#         return f"Error calling LLM: {e}"
+#         return f"Error calling LLM: {e}" 
 
 import os
 from openai import OpenAI
@@ -43,3 +43,5 @@ def call_llm(prompt, model="gpt-3.5-turbo", temperature=0.7):
         return response.choices[0].message.content
     except Exception as e:
         return f"Error calling LLM: {e}"
+
+#Test commit to see if CI/CD works?
